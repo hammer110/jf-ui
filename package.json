@@ -112,10 +112,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@git.tech.9fbank.com:xnxy_h5/onecard-ui-vue.git"
+    "url": "git@github.com:hammer110/jf-ui.git"
   },
   "bugs": {
-    "url": "http://git.tech.9fbank.com/xnxy_h5/onecard-ui-vue/issues"
+    "url": "https://github.com/hammer110/jf-ui/issues"
   },
   "main": "dist/jf-ui.js",
   "license": "MIT",
