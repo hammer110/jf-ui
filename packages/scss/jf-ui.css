@@ -1,0 +1,26 @@
+@import "./iconfont/iconfont.css";
+.input:disabled, textarea:disabled {
+  color: rgb(84, 84, 84);
+  cursor: default;
+}
+.jf-pd40 {
+  padding-top: .5333rem !important;
+}
+.icon{
+  width: .5867rem;
+  height: .5867rem;
+}
+.jf-justify-between{
+  justify-content: space-between;
+}
+.jf-icon-selected{
+  color: #FE664F !important;
+}
+.oh {
+  overflow-y: hidden;
+  height: 100%;
+}
+/*html, body {
+  font-family: PingFangSC-Medium;
+}
+*/

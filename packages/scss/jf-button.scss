@@ -1,0 +1,42 @@
+button.jf-btn-big-disabled{
+  background-color: #EBEBEB;
+}
+.jf-btn-big-normal{
+  background: #FE664F;
+  // color: #fff;
+}
+.jf-btn-big-highlight{
+  background: #E45B46;
+}
+button.jf-btn-small-disabled{
+  background-color: #fff;
+  color: #EBEBEB;
+}
+.jf-btn-small-normal{
+  color: #FE664F;
+}
+.jf-btn-small-highlight{
+  color: rgba(254, 102, 79, .5)
+
+}
+.jf-btn-big{
+  @include font-dpr(32);
+  border-radius: .2667rem;
+  width: 7.8667rem;
+  display: block;
+  // height: 1.1733rem;
+  color: #fff;
+  // line-height: 1.1733rem;
+}
+.jf-btn-small{
+  @include font-dpr(28);
+  border-radius: .2667rem;
+  width: 3.2rem;
+  display: block;
+  // height: 1.1733rem;
+  // line-height: 1.1733rem;
+  background: #FFFFFF;
+}
+.jf-btn-box-shadow {
+  box-shadow: 0 .08rem .24rem 0 rgba(0,0,0,0.10);
+}

@@ -1,0 +1,53 @@
+.jf-input{
+  @include font-dpr(36);
+  border: none;
+  height: 1.0667rem;
+  line-height: 1.0667rem;
+  border-bottom: 1px solid #EBEBEB;
+}
+.jf-input::-webkit-input-placeholder{
+   @include font-dpr(28);
+}
+.jf-input::input-placeholder{
+   @include font-dpr(28);
+}
+.jf-input-border-bottom {
+  border-bottom: 1px solid #FE664F;
+}
+.jf-input-wrap{
+  height: 1.0667rem;
+  line-height: 1.0667rem;
+}
+.jf-input-pwd{
+  @include font-dpr(36);
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+  .jf-input-forcus{
+    position: relative;
+    &:after {
+      display: block;
+      content: "";
+      width: 2px;
+      height: 50%;
+      background: #FE664F;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      animation: fade-in 1.4s infinite;
+    -webkit-animation: fade-in 1.4s infinite;
+    }
+  }
+  @keyframes fade-in {
+    0% { opacity: 1; }
+    70% { opacity: 0; }
+    100% { opacity: 0; }
+  }
+  @keyframes -webkit-fade-in {
+    0% { opacity: 1; }
+    70% { opacity: 0; }
+    100% { opacity: 0; }
+  }

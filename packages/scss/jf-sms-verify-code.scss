@@ -1,0 +1,70 @@
+.jf-validcode-wrap{
+  font-family: PingFangSC-Regular;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 30%;
+  @include c3(transform,translate3d(0,-50%,0))
+  z-index: 11;
+  background: #fff;
+  margin: 0 1.2667rem;
+  color: #484848;
+  text-align: center;
+  @include font-dpr(34);
+  border-radius: .2667rem;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+.jf-validcode-content{
+   padding: 0 .66667rem;
+  &>p {
+    @include font-dpr(28);
+    color: #333333;
+    line-height: .6133rem;
+  }
+}
+.jf-validcode-input{
+  align-items: center;
+  justify-content: center;
+  padding-top: .5333rem;
+  &>span {
+      width: 100%;
+      border-bottom: 1px solid #999;
+      margin-right: .2667rem;
+      // padding: .25333rem 0;
+      &:nth-last-child(1) {
+        margin-right: 0;
+      }
+      &>input {
+        width: 100%;
+        text-align: center;
+        @include font-dpr(48);
+        background: transparent;
+        border: none;
+      }
+  }
+}
+.jf-validcode-footer{
+  color: #999999;
+  @include font-dpr(32);
+  padding: .8933rem 0 .6267rem 0;
+}
+.jf-validcode-header{
+   &> i {
+      text-align: right;
+      margin: .16rem;
+      @include font-dpr(50)
+  }
+}
+.jf-validcode-error{
+  .jf-validcode-content>p, .jf-validcode-footer {
+    color: #FE664F;
+  }
+  .jf-validcode-input > span {
+    border-bottom: 1px solid #FE664F;
+  }
+}
+.jf-validcode-over .jf-validcode-footer{
+  color: #FE664F;
+}

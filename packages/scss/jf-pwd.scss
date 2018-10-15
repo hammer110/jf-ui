@@ -1,0 +1,86 @@
+.jf-pwd-wrap {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+  bottom: 0;
+  background: rgba(210,213,219,0.90);
+  z-index: 10001;
+}
+.jf-keyboard > li {
+  // border-bottom: 1px solid #d7e0e6;
+  margin-top: .16rem;
+  padding-bottom: .08rem;
+  &>span {
+    font-family: PingFangSC-Regular;
+    @include px2rem(font-size, 50);
+    line-height: 1;
+    margin: 0 .16rem;
+    background: #FFFFFF;
+    box-shadow: 0 2px 0 0 #848688;
+    border-radius: .1333rem;
+    @include px2rem(min-height, 92);
+  }
+  span.jf-empty-bg{
+    background: inherit;
+    box-shadow: none;
+    border-radius: none;
+  }
+  font {
+    display: inline-block;
+    @include px2rem(padding-top, 7);
+  }
+  i {
+    display: block;
+    @include px2rem(font-size, 20);
+    line-height: 1;
+    font-style: normal;
+    color: #232323;
+    font-weight: bold;
+    font-family: PingFangSC-Regular;
+    @include px2rem(padding, 3 0 12);
+  }
+}
+.jf-keyboard-notify {
+  @include px2rem(height, 88);
+  @include px2rem(line-height, 88);
+  @include px2rem(padding, 0 38);
+  color: #AAB1BC;
+  position: relative;
+  background: #EBEEF2;
+  overflow: hidden;
+  .keyboard-notify__content {
+    position: absolute;
+    left: 50%;
+    @include c3(transform,translate3d(-50%,0,0));
+    @include c3(align-items, center);
+  }
+  .keyboard-notify__icon {
+    @include font-dpr(32);
+  }
+  .keyboard-notify__icon--toggle {
+    float: right;
+    @include px2rem(line-height, 88);
+  }
+}
+.jf-icon-delete b{
+  @include px2rem(font-size, 36);
+  color: #3F434A;
+}
+.jf-keyboard-center{
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  b, font {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    @include c3(transform,translate3d(-50%,-50%,0));
+  }
+  font {
+    padding-top: 0;
+  }
+}
